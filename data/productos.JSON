@@ -1,0 +1,54 @@
+[
+    {
+        "id": 1,
+        "nombre": "Laptop ABC",
+        "precio": 1200,
+        "cantidad": 10,
+        "categoria": "Laptops",
+        "imagenes": [
+            "assets/images/laptop1.jpg",
+            "assets/images/laptop2.jpg",
+            "assets/images/laptop3.jpg"
+        ],
+        "descripcion": "Una potente laptop para todos tus proyectos."
+    },
+    {
+        "id": 2,
+        "nombre": "Desktop ABC",
+        "precio": 2000,
+        "cantidad": 8,
+        "categoria": "Computadoras",
+        "imagenes": [
+            "assets/images/desktop1.jpg",
+            "assets/images/desktop2.jpg",
+            "assets/images/desktop3.jpg"
+        ],
+        "descripcion": "Una computadora de escritorio para el hogar y la oficina."
+    },
+    {
+        "id": 3,
+        "nombre": "Accesorios Gamer",
+        "precio": 150,
+        "cantidad": 20,
+        "categoria": "Accesorios",
+        "imagenes": [
+            "assets/images/accessory1.jpg",
+            "assets/images/accessory2.jpg",
+            "assets/images/accessory3.jpg"
+        ],
+        "descripcion": "Accesorios de alta calidad para gamers."
+    },
+    {
+        "id": 4,
+        "nombre": "Audífonos",
+        "precio": 40,
+        "cantidad": 35,
+        "categoria": "Accesorios",
+        "imagenes": [
+            "assets/images/audifonos1.jpg",
+            "assets/images/audifonos2.jpg",
+            "assets/images/audifonos3.jpg"
+        ],
+        "descripcion": "Audifonos de alta calidad para gamers."
+    }
+]

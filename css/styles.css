@@ -1,0 +1,20 @@
+main {
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+}
+
+.productos,
+.carrito {
+    background-color: #e7e6ec;
+    padding: 1rem;
+    border-radius: 5px;
+}
+
+.productos {
+    min-height: 400px;
+}
+
+.carrito {
+    min-height: 400px;
+    background-color: rgb(247, 248, 252);
+}
