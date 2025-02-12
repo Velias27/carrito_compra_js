@@ -40,7 +40,7 @@ function actualizarVistaCarrito() {
         <strong>${item.producto.nombre}</strong><br>
         Cantidad: ${item.cantidad}<br>
         Precio Unitario: $${item.producto.precio}
-        <button class="btn btn-sm btn-danger ms-2" onclick="eliminarDelCarrito(${item.producto.id})">Eliminar</button>
+        <button class="btn btn-sm btn-danger ms-2" onclick="eliminarDelCarrito(${item.producto.id})"><i class="fas fa-trash"></i></button>
         `;
         carritoContainer.appendChild(itemDiv);
     });

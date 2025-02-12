@@ -40,10 +40,11 @@ function generarCards() {
         //Botón agregar al carrito
         const btnAgregar = document.createElement("button");
         btnAgregar.className = "btn btn-primary mt-2";
-        btnAgregar.innerText = "Agregar al carrito";
+        btnAgregar.innerHTML = '<i class="fas fa-cart-plus"></i>';
         btnAgregar.onclick = function () {
             agregarAlCarrito(producto.id);
         };
+        
 
         cardBody.appendChild(title);
         cardBody.appendChild(text);
