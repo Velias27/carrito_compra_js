@@ -31,7 +31,7 @@ function generarCards() {
         const text = document.createElement("p");
         text.className = "card-text";
         text.innerHTML = `
-    ${producto.descripcion}<br>
+    ${producto.descripcion}<br><br>
     <strong>Precio:</strong> $${producto.precio}<br>
     <strong>Categoría:</strong> ${producto.categoria}<br>
     <strong>Stock disponible:</strong> ${producto.cantidad}

@@ -1,21 +1,21 @@
 [
     {
         "id": 1,
-        "nombre": "Laptop ABC",
-        "precio": 1200,
+        "nombre": "MSI Raider GE78hx",
+        "precio": 1587.29,
         "cantidad": 10,
         "categoria": "Laptops",
         "imagenes": [
-            "assets/images/laptop1.jpg",
-            "assets/images/laptop2.jpg",
-            "assets/images/laptop3.jpg"
+            "assets/images/laptop1.png",
+            "assets/images/laptop2.png",
+            "assets/images/laptop3.png"
         ],
         "descripcion": "Una potente laptop para todos tus proyectos."
     },
     {
         "id": 2,
-        "nombre": "Desktop ABC",
-        "precio": 2000,
+        "nombre": "HP Victus TG02-0004la",
+        "precio": 985,
         "cantidad": 8,
         "categoria": "Computadoras",
         "imagenes": [
@@ -27,16 +27,16 @@
     },
     {
         "id": 3,
-        "nombre": "Accesorios Gamer",
+        "nombre": "Monitor LG Odyssey G5",
         "precio": 150,
         "cantidad": 20,
-        "categoria": "Accesorios",
+        "categoria": "Monitores",
         "imagenes": [
-            "assets/images/accessory1.jpg",
-            "assets/images/accessory2.jpg",
-            "assets/images/accessory3.jpg"
+            "assets/images/monitor1.jpg",
+            "assets/images/monitor2.jpg",
+            "assets/images/monitor3.jpg"
         ],
-        "descripcion": "Accesorios de alta calidad para gamers."
+        "descripcion": "Monitor gamer de 1440p, pantalla de 27\""
     },
     {
         "id": 4,
