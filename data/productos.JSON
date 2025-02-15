@@ -50,5 +50,68 @@
             "assets/images/audifonos3.jpg"
         ],
         "descripcion": "Audifonos de alta calidad para gamers."
+    },
+    {
+        "id": 5,
+        "nombre": "Mouse",
+        "precio": 59,
+        "cantidad": 25,
+        "categoria": "Accesorios",
+        "imagenes": [
+            "assets/images/mouse1.jpg",
+            "assets/images/mouse2.jpg",
+            "assets/images/mouse3.jpg"
+        ],
+        "descripcion": "Mouse Logitech G502 HERO 16K DPI."
+    },
+    {
+        "id": 6,
+        "nombre": "Teclado",
+        "precio": 80,
+        "cantidad": 20,
+        "categoria": "Accesorios",
+        "imagenes": [
+            "assets/images/teclado1.jpg",
+            "assets/images/teclado2.jpg",
+            "assets/images/teclado3.jpg"
+        ],
+        "descripcion": "Teclado Hyperx Allow Origins."
+    },
+    {
+        "id": 7,
+        "nombre": "Control de Xbox",
+        "precio": 69,
+        "cantidad": 25,
+        "categoria": "Accesorios",
+        "imagenes": [
+            "assets/images/control1.jpg",
+            "assets/images/control2.jpg",
+            "assets/images/control3.jpg"
+        ],
+        "descripcion": "Control de Xbox X/S Inalambrico."
+    },
+    {
+        "id": 8,
+        "nombre": "Memoria Ram",
+        "precio": 49,
+        "cantidad": 30,
+        "categoria": "Accesorios",
+        "imagenes": [
+            "assets/images/memoria1.jpg",
+            "assets/images/memoria2.jpg"
+        ],
+        "descripcion": "Memoria ram ddr5 Kingston fury 8gb."
+    },
+    {
+        "id": 9,
+        "nombre": "Disco SSD",
+        "precio": 130,
+        "cantidad": 30,
+        "categoria": "Accesorios",
+        "imagenes": [
+            "assets/images/ssd1.jpg",
+            "assets/images/ssd2.jpg"
+        ],
+        "descripcion": "Disco solido externo kingston 2tb usb-c a usb-a."
     }
 ]
