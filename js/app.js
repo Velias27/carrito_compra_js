@@ -109,8 +109,16 @@ function generarFactura() {
         doc.setFontSize(14);
         doc.text(`Total: $${window.miCarrito.calcularTotal()}`, 10, doc.lastAutoTable.finalY + 10);
 
-        doc.save("factura.pdf");
+        //Ventana temporal para abrir pdf en navegador
+        const pdfBlob = doc.output("bloburl");
+        const nuevaVentana = window.open(pdfBlob, "_blank");
+        //Al cargar, mostramos opcion de imprimir automaticamente
+        if (nuevaVentana) {
+            nuevaVentana.onload = function () {
+                nuevaVentana.print();
+            };
+        }
     } else {
-        console.error("autoTable no está definido. Verifica que la librería esté bien importada.");
+        console.error("AutoTable no está definido. Verifica que la librería esté bien importada.");
     }
 }
