@@ -38,7 +38,8 @@ function actualizarVistaCarrito() {
         itemDiv.innerHTML = `
         <strong>${item.producto.nombre}</strong><br>
         Cantidad: ${item.cantidad}<br>
-        Precio Unitario: $${item.producto.precio}
+        Precio Unitario: $${item.producto.precio}<br>
+        Subtotal: $${item.cantidad * item.producto.precio}<br>
         <button class="btn btn-sm btn-danger ms-2" onclick="eliminarDelCarrito(${item.producto.id})"><i class="fas fa-trash"></i></button>
         `;
         carritoContainer.appendChild(itemDiv);
@@ -87,14 +88,15 @@ function generarFactura() {
         item.producto.nombre,
         item.producto.descripcion,
         item.cantidad,
-        `$${item.producto.precio}`
+        `$${item.producto.precio}`,
+        `$${(item.cantidad*item.producto.precio)}`
     ]);
 
     //Informacion de la compra y estilos de la tabla
     if (doc.autoTable) {
         doc.autoTable({
             startY: 70,
-            head: [["#", "Producto", "Detalle", "Cantidad", "Precio"]],
+            head: [["#", "Producto", "Detalle", "Cantidad", "Precio", "Subtotal"]],
             body: tableData,
             theme: "grid",
             headStyles: { fillColor: [0, 150, 136], textColor: [255, 255, 255], fontSize: 12 },
