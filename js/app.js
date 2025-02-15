@@ -79,7 +79,10 @@ function generarFactura() {
     doc.setFontSize(18);
     doc.text("Factura de Compra", 70, 20);
     doc.setFontSize(12);
-    doc.text(`Fecha: ${new Date().toLocaleDateString()}`, 10, 50);
+    const fechaActual = new Date();
+    //Damos formato correcto a la fecha
+    const fechaFormateada = `${fechaActual.getDate().toString().padStart(2, '0')}/${(fechaActual.getMonth() + 1).toString().padStart(2, '0')}/${fechaActual.getFullYear()}`;
+    doc.text(`Fecha: ${fechaFormateada}`, 10, 50);
     doc.text("Detalles de la compra:", 10, 60);
 
     // Crear tabla con autoTable
