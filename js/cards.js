@@ -17,7 +17,7 @@ function generarCards() {
         //Se crea carrusel
         const carouselDiv = document.createElement("div");
         carouselDiv.id = `carousel-${index}`;
-        carouselDiv.className = "carousel slide";
+        carouselDiv.className = "carousel slide p-4";
         carouselDiv.setAttribute("data-bs-interval", "false");
 
         //Paginacion
@@ -44,7 +44,7 @@ function generarCards() {
             img.alt = producto.nombre;
             img.className = "d-block w-100";
             img.style.height = "200px";
-            img.style.objectFit = "cover";
+            img.style.objectFit = "contain";
 
             carouselItem.appendChild(img);
             carouselInner.appendChild(carouselItem);
@@ -94,8 +94,8 @@ function generarCards() {
 
         //Botón agregar al carrito
         const btnAgregar = document.createElement("button");
-        btnAgregar.className = "btn btn-primary mt-4 rounded-3";
-        btnAgregar.innerHTML = '<span><i class="fas fa-cart-plus"></i></span> Agregar';
+        btnAgregar.className = "btn mt-4 rounded-3 btnAgregar p-2";
+        btnAgregar.innerHTML = '<i class="fas fa-cart-plus me-2"></i> <span>Agregar</span>';
         btnAgregar.onclick = function () {
             agregarAlCarrito(producto.id);
         }

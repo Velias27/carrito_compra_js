@@ -9,6 +9,7 @@ main {
 
 .hero {
     background: linear-gradient(rgba(9, 18, 54, 0.8), rgba(9, 18, 54, 0.8)), url("../assets/banner/pcbanner.jpg") no-repeat center center;
+
     background-size: cover;
     position: relative;
     height: 80vh;
@@ -45,6 +46,11 @@ main {
     margin-top: 20px;
 }
 
+.card {
+    box-shadow: 4px 8px 18px rgba(0, 0, 0, 0.1);
+    border-color: #edebf59d;
+}
+
 .card-body {
     display: flex;
     flex-direction: column;
@@ -61,4 +67,15 @@ main {
 
 .btn {
     margin-top: auto;
+}
+
+.btnAgregar {
+    background-color: rgba(14, 33, 110, 0.8);
+    border: none;
+    color: white;
+}
+
+.btnAgregar:hover {
+    background-color: rgba(14, 33, 110, 1);
+    color: white;
 }
