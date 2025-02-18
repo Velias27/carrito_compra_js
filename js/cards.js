@@ -13,7 +13,7 @@ function generarCards() {
         //Se crea card
         const cardDiv = document.createElement("div");
         cardDiv.className = "card h-100";
-       
+
         //Crear carrusel
         const carouselDiv = document.createElement("div");
         carouselDiv.id = `carousel-${index}`;
@@ -23,11 +23,11 @@ function generarCards() {
         //Paginacion
         const carouselIndicators = document.createElement("div");
         carouselIndicators.className = "carousel-indicators";
-        
+
         //Contenido del carrusel
         const carouselInner = document.createElement("div");
         carouselInner.className = "carousel-inner";
-        
+
         producto.imagenes.forEach((imagen, imgIndex) => {
             const indicator = document.createElement("button");
             indicator.setAttribute("type", "button");
@@ -38,18 +38,18 @@ function generarCards() {
 
             const carouselItem = document.createElement("div");
             carouselItem.className = `carousel-item ${imgIndex === 0 ? "active" : ""}`;
-            
+
             const img = document.createElement("img");
             img.src = imagen;
             img.alt = producto.nombre;
             img.className = "d-block w-100";
             img.style.height = "200px";
             img.style.objectFit = "cover";
-            
+
             carouselItem.appendChild(img);
             carouselInner.appendChild(carouselItem);
         });
-        
+
         //Botones del carrusel
         const prevButton = document.createElement("button");
         prevButton.className = "carousel-control-prev";
