@@ -12,9 +12,9 @@ function generarCards() {
 
         //Se crea card
         const cardDiv = document.createElement("div");
-        cardDiv.className = "card h-100";
+        cardDiv.className = "card h-100 p-3 rounded-4";
 
-        //Crear carrusel
+        //Se crea carrusel
         const carouselDiv = document.createElement("div");
         carouselDiv.id = `carousel-${index}`;
         carouselDiv.className = "carousel slide";

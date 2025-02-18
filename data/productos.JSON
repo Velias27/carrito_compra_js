@@ -10,7 +10,7 @@
             "assets/images/laptop2.png",
             "assets/images/laptop3.png"
         ],
-        "descripcion": "Una potente laptop para todos tus proyectos."
+        "descripcion": "Una potente laptop para todos tus proyectos. Equipado con 13va Gen. Intel® Core™ i9-13980HX."
     },
     {
         "id": 2,
@@ -23,7 +23,7 @@
             "assets/images/desktop2.jpg",
             "assets/images/desktop3.jpg"
         ],
-        "descripcion": "Una computadora de escritorio para el hogar y la oficina."
+        "descripcion": "Una computadora de escritorio para gamers. Juega a tu máximo nivel con un procesador Intel® y gráficos impresionantes."
     },
     {
         "id": 3,
@@ -36,11 +36,11 @@
             "assets/images/monitor2.jpg",
             "assets/images/monitor3.jpg"
         ],
-        "descripcion": "Monitor gamer de 1440p con 27\" de definición."
+        "descripcion": "Monitor gamer de 1440p con 27\" de definición. Posee pantalla curva 1000R y Tiempo de respuesta de 1ms (MPRT)."
     },
     {
         "id": 4,
-        "nombre": "Audífonos",
+        "nombre": "Audífonos MSI DS501",
         "precio": 40,
         "cantidad": 35,
         "categoria": "Accesorios",
@@ -49,11 +49,11 @@
             "assets/images/audifonos2.jpg",
             "assets/images/audifonos3.jpg"
         ],
-        "descripcion": "Audifonos de alta calidad para gamers."
+        "descripcion": "Audifonos de alta calidad para gamers. Con reducción de ruido y micrófono omnidireccional ajustable."
     },
     {
         "id": 5,
-        "nombre": "Mouse",
+        "nombre": "Mouse Logitech G502",
         "precio": 59,
         "cantidad": 25,
         "categoria": "Accesorios",
@@ -62,11 +62,11 @@
             "assets/images/mouse2.jpg",
             "assets/images/mouse3.jpg"
         ],
-        "descripcion": "Mouse Logitech G502 HERO 16K DPI."
+        "descripcion": "Mouse Logitech G502 HERO 16K DPI. Cuenta con  sensor de juegos HERO 25K, pesos reposicionables y mucho más."
     },
     {
         "id": 6,
-        "nombre": "Teclado",
+        "nombre": "Teclado Hyperx Allow Origins.",
         "precio": 80,
         "cantidad": 20,
         "categoria": "Accesorios",
@@ -75,7 +75,7 @@
             "assets/images/teclado2.jpg",
             "assets/images/teclado3.jpg"
         ],
-        "descripcion": "Teclado Hyperx Allow Origins."
+        "descripcion": "Teclado Hyperx Allow Origins. Es ultracompacto y resistente, posee conmutadores mecánicos HyperX."
     },
     {
         "id": 7,
@@ -88,7 +88,7 @@
             "assets/images/control2.jpg",
             "assets/images/control3.jpg"
         ],
-        "descripcion": "Control de Xbox X/S Inalambrico."
+        "descripcion": "Control de Xbox X/S Inalambrico. Posee gatillos y botones texturizados, pad direccional híbrida y tecnología Bluetooth."
     },
     {
         "id": 8,
@@ -100,7 +100,7 @@
             "assets/images/memoria1.jpg",
             "assets/images/memoria2.jpg"
         ],
-        "descripcion": "Memoria ram ddr5 Kingston fury 8gb."
+        "descripcion": "Memoria ram ddr5 Kingston fury 8gb. Trae la última tecnología para plataformas de gaming de última generación"
     },
     {
         "id": 9,
