@@ -73,48 +73,46 @@ function generarCards() {
 
         //Body del card
         const cardBody = document.createElement("div");
-        cardBody.className = "card-body";
+        cardBody.className = "card-body d-flex flex-column";
 
         const title = document.createElement("h5");
         title.className = "card-title";
         title.innerText = producto.nombre;
 
-        const text = document.createElement("p");
-        text.className = "card-text";
-        text.innerHTML = `${producto.descripcion}<br><br>
-        <strong>Precio:</strong> $${producto.precio}<br>
-        <strong>Categoría:</strong> ${producto.categoria}<br>
-        <strong>Stock disponible:</strong> ${producto.cantidad}`;
+        const description = document.createElement("p");
+        description.className = "card-description";
+        description.innerText = producto.descripcion;
+
+        //Detalles
+        const details = document.createElement("div");
+        details.className = "card-details";
+        details.innerHTML = `
+       <strong>Precio:</strong> $${producto.precio}<br>
+       <strong>Categoría:</strong> ${producto.categoria}<br>
+       <strong>Stock disponible:</strong> ${producto.cantidad}
+       `;
 
         //Botón agregar al carrito
         const btnAgregar = document.createElement("button");
-        btnAgregar.className = "btn btn-primary mt-2";
-        btnAgregar.innerHTML = '<i class="fas fa-cart-plus"></i>';
+        btnAgregar.className = "btn btn-primary mt-4 rounded-3";
+        btnAgregar.innerHTML = '<span><i class="fas fa-cart-plus"></i></span> Agregar';
         btnAgregar.onclick = function () {
             agregarAlCarrito(producto.id);
-        };
+        }
 
-
+        //Se agregan los elementos al card-body
         cardBody.appendChild(title);
-        cardBody.appendChild(text);
+        cardBody.appendChild(description);
+        cardBody.appendChild(details);
         cardBody.appendChild(btnAgregar);
 
-        //Footer del card
-        const cardFooter = document.createElement("div");
-        cardFooter.className = "card-footer";
-        const small = document.createElement("small");
-        small.className = "text-body-secondary";
-        small.innerText = "última actualización";
-        cardFooter.appendChild(small);
-
-        //Card
+        //Se arma el card
         cardDiv.appendChild(carouselDiv);
         cardDiv.appendChild(cardBody);
-        cardDiv.appendChild(cardFooter);
 
+        //Se agrega card a columna
         colDiv.appendChild(cardDiv);
         container.appendChild(colDiv);
-
-    })
+    });
 
 }

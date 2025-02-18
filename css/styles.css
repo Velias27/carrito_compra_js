@@ -30,7 +30,7 @@ main {
 
 .productos,
 .carrito {
-    background-color: #f2f0f8;
+    background-color: #ffffff;
     padding: 1rem;
     border-radius: 5px;
 }
@@ -41,5 +41,24 @@ main {
 
 .carrito {
     min-height: 400px;
-    background-color: rgb(247, 248, 252);
+    background-color: #edebf5;
+    margin-top: 20px;
+}
+
+.card-body {
+    display: flex;
+    flex-direction: column;
+    height: 100%;
+}
+
+.card-description {
+    flex: 1;
+}
+
+.card-details {
+    margin-top: auto;
+}
+
+.btn {
+    margin-top: auto;
 }
