@@ -42,7 +42,7 @@ function generarFactura() {
     Swal.fire({
         icon: 'success',
         title: 'Compra realizada',
-        text: 'Tu compra se ha procesado con éxito. La factura ha sido generada.',
+        text: 'La factura ha sido generada exitosamente.',
         confirmButtonText: 'Aceptar'
     });
 }
