@@ -29,7 +29,7 @@
         "id": 3,
         "nombre": "Monitor LG Odyssey G5",
         "precio": 150,
-        "cantidad": 20,
+        "cantidad": 25,
         "categoria": "Monitores",
         "imagenes": [
             "assets/images/monitor1.jpg",

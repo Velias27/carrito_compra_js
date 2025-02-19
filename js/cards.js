@@ -94,17 +94,56 @@ function generarCards() {
 
         //Botón agregar al carrito
         const btnAgregar = document.createElement("button");
-        btnAgregar.className = "btn mt-4 rounded-3 btnAgregar p-2";
+        btnAgregar.className = "btn rounded-3 btnAgregar p-2 d-flex align-items-center";
+        btnAgregar.style.height = "42px"; // Misma altura que el input
         btnAgregar.innerHTML = '<i class="fas fa-cart-plus me-2"></i> <span>Agregar</span>';
         btnAgregar.onclick = function () {
-            agregarAlCarrito(producto.id);
+            agregarAlCarrito(producto.id, parseInt(cantidadInput.value));
         }
+
+        //Control numérico
+        const cantidadInput = document.createElement("input");
+        cantidadInput.type = "number";
+        cantidadInput.min = "1";
+        cantidadInput.max = producto.cantidad.toString();
+        cantidadInput.value = "1";
+        cantidadInput.className = "form-control rounded-3 text-center";
+        cantidadInput.style.width = "70px";
+        cantidadInput.style.height = "42px";
+
+        //Validacion al salir del campo numerico
+        cantidadInput.addEventListener("blur", function () {
+            const valor = parseInt(cantidadInput.value);
+            if (isNaN(valor) || valor < 1) {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'TechZone',
+                    text: 'La cantidad debe ser positiva.',
+                });
+                cantidadInput.value = "1";
+            } else if (valor > producto.cantidad) {
+                Swal.fire({
+                    icon: 'error',
+                    title: 'TechZone',
+                    text: `La cantidad ingresada supera el stock disponible (${producto.cantidad}).`,
+                });
+                cantidadInput.value = producto.cantidad.toString();
+            }
+        });
+
+        //Contenedor para el control numérico y el botón
+        const cantidadContainer = document.createElement("div");
+        cantidadContainer.className = "d-flex align-items-center gap-2 mt-3";
+
+        // Agregar los elementos al contenedor
+        cantidadContainer.appendChild(cantidadInput);
+        cantidadContainer.appendChild(btnAgregar);
 
         //Se agregan los elementos al card-body
         cardBody.appendChild(title);
         cardBody.appendChild(description);
         cardBody.appendChild(details);
-        cardBody.appendChild(btnAgregar);
+        cardBody.appendChild(cantidadContainer);
 
         //Se arma el card
         cardDiv.appendChild(carouselDiv);

@@ -12,14 +12,18 @@ document.addEventListener('DOMContentLoaded', () => {
         .catch(error => console.error("Error al cargar los productos:", error));
 });
 
-function agregarAlCarrito(idProducto) {
+function agregarAlCarrito(idProducto, cantidad) {
     const producto = window.productos.find(prod => prod.id === idProducto);
     if (producto && producto.cantidad > 0) {
-        window.miCarrito.agregarProducto(producto, 1);
+        window.miCarrito.agregarProducto(producto, cantidad);
         generarCards();
         actualizarVistaCarrito();
     } else {
-        alert("Producto no disponible");
+        Swal.fire({
+            icon: 'error',
+            title: 'TechZone',
+            text: 'Producto no disponible.',
+        });
     }
 }
 
