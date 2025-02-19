@@ -12,10 +12,10 @@ document.addEventListener('DOMContentLoaded', () => {
         .catch(error => console.error("Error al cargar los productos:", error));
 });
 
-function agregarAlCarrito(idProducto) {
+function agregarAlCarrito(idProducto, cantidad) {
     const producto = window.productos.find(prod => prod.id === idProducto);
     if (producto && producto.cantidad > 0) {
-        window.miCarrito.agregarProducto(producto, 1);
+        window.miCarrito.agregarProducto(producto, cantidad);
         generarCards();
         actualizarVistaCarrito();
     } else {
@@ -92,7 +92,7 @@ function generarFactura() {
         item.producto.descripcion,
         item.cantidad,
         `$${item.producto.precio}`,
-        `$${(item.cantidad*item.producto.precio)}`
+        `$${(item.cantidad * item.producto.precio)}`
     ]);
 
     //Informacion de la compra y estilos de la tabla
