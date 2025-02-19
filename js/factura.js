@@ -1,8 +1,7 @@
 // js/factura.js
 document.addEventListener('DOMContentLoaded', () => {
     const carritoContainer = document.getElementById('carritoContainer');
-    
-    // Crear botón de generar factura si el carrito no está vacío
+
     if (window.miCarrito.items.length > 0) {
         const btnFactura = document.createElement("button");
         btnFactura.className = "btn btn-success mt-3";
@@ -32,6 +31,18 @@ function generarFactura() {
     });
 
     doc.text(`Total: $${window.miCarrito.calcularTotal()}`, 10, y + 10);
-    
+
     doc.save("factura.pdf");
+
+    // Vaciar el carrito después de la compra
+    window.miCarrito.items = [];
+    actualizarVistaCarrito();
+
+    // Mostrar SweetAlert
+    Swal.fire({
+        icon: 'success',
+        title: 'Compra realizada',
+        text: 'Tu compra se ha procesado con éxito. La factura ha sido generada.',
+        confirmButtonText: 'Aceptar'
+    });
 }
