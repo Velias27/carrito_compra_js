@@ -115,10 +115,18 @@ function generarCards() {
         cantidadInput.addEventListener("blur", function () {
             const valor = parseInt(cantidadInput.value);
             if (isNaN(valor) || valor < 1) {
-                alert("La cantidad debe ser positiva.");
+                Swal.fire({
+                    icon: 'error',
+                    title: 'TechZone',
+                    text: 'La cantidad debe ser positiva.',
+                });
                 cantidadInput.value = "1";
             } else if (valor > producto.cantidad) {
-                alert(`La cantidad no puede superar el stock disponible (${producto.cantidad}).`);
+                Swal.fire({
+                    icon: 'error',
+                    title: 'TechZone',
+                    text: `La cantidad ingresada supera el stock disponible (${producto.cantidad}).`,
+                });
                 cantidadInput.value = producto.cantidad.toString();
             }
         });

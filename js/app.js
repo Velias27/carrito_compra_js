@@ -19,7 +19,11 @@ function agregarAlCarrito(idProducto, cantidad) {
         generarCards();
         actualizarVistaCarrito();
     } else {
-        alert("Producto no disponible");
+        Swal.fire({
+            icon: 'error',
+            title: 'TechZone',
+            text: 'Producto no disponible.',
+        });
     }
 }
 
