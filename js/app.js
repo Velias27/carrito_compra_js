@@ -65,11 +65,11 @@ function actualizarVistaCarrito() {
     totalDiv.innerHTML = `<h5>Total: $${window.miCarrito.calcularTotal().toFixed(2)}</h5>`;
     carritoContainer.appendChild(totalDiv);
 
-    // Asegurar que el botón de generar factura solo aparece si hay productos
+
     if (window.miCarrito.items.length > 0) {
         const btnFactura = document.createElement("button");
         btnFactura.className = "btn btn-success mt-3";
-        btnFactura.innerHTML = '<i class="fas fa-file-pdf"></i> Generar Factura';
+        btnFactura.innerHTML = '<i class="fas fa-shopping-cart"></i> Realizar Compra'; 
         btnFactura.onclick = generarFactura;
         carritoContainer.appendChild(btnFactura);
     }
