@@ -16,7 +16,7 @@ main {
     display: flex;
     align-items: center;
     justify-content: center;
-    color: white;
+    color: rgb(255, 255, 255);
 }
 
 .hero-content {
@@ -84,3 +84,4 @@ main {
 .btnDecrementar {
     background-color: #ffffff;
 }
+
